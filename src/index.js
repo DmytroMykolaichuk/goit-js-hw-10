@@ -58,8 +58,8 @@ function renderMarkup(data) {
         countryInfoEl.innerHTML = markup
     };
 }
-function onError() {
-    Notiflix.Notify.failure('Oops, there is no country with that name')
+function onError(error) {
+    Notiflix.Notify.failure(error)
     countryListEl.innerHTML = ''
     countryInfoEl.innerHTML = ''
 }
