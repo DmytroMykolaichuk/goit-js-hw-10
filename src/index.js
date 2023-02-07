@@ -25,7 +25,7 @@ function onSearch(e) {
 };
 
 function renderMarkup(data) {
-    // console.log(data)
+    console.log(data)
     let markup = '';
 
     if (data.length > 10) {
